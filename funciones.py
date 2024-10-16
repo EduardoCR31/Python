@@ -16,8 +16,18 @@ while cantidadpro != 0:
     print ("el subtotal del producto es :", subtotal)
     totalcompra += subtotal
 
-print (f"el total de los productos es {totalcompra}")
- 
+def calculoiva(z):
+    return z*0.19
+
+totaliva = calculoiva(totalcompra)
+
+def suma(c,v):
+    return c+v
+
+totalmasiva = suma(totalcompra, totaliva)
+print (f"el total de los productos es {totalmasiva}")
+
+    
     
     
     
